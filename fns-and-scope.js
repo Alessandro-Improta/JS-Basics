@@ -6,6 +6,13 @@ var name = 'Tyler';
 
   //Code Here
 
+  function isTyler(name) {
+  	if (name === "Tyler") {
+  		return true;
+  	}
+  	return false;
+  }
+
 //////////////////PROBLEM 2////////////////////
 
 
@@ -14,6 +21,10 @@ var name = 'Tyler';
 
   //Code Here
 
+function getName() {
+	var name = prompt("What is your name?");
+	return name;
+}
 
 //////////////////PROBLEM 3////////////////////
 
@@ -23,6 +34,11 @@ var name = 'Tyler';
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
+
+function welcome() {
+	var name = getName();
+	alert("Welcome, " + name);
+}
 
 
 //////////////////PROBLEM 4////////////////////
@@ -34,6 +50,7 @@ var name = 'Tyler';
 
   //Answer Here
 
+"A parameter is a stand in for an argument. A parameter is used in the defining of a function. An argument is used in the calling of a function"
 
 //////////////////PROBLEM 5////////////////////
 
@@ -44,6 +61,12 @@ var name = 'Tyler';
 
   //Answer Here
 
+undefined
+NaN
+0
+""
+false
+
 
 
 //////////////////PROBLEM 6////////////////////
@@ -53,12 +76,18 @@ var name = 'Tyler';
 //Create a function called myName that returns your name
 
   //Code Here
+
+function myName() {
+	return "Alessandro Improta";
+}
   
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
+
+var newMyName = myName;
 
 //Now alert the result of invoking newMyName
 
@@ -72,8 +101,15 @@ var name = 'Tyler';
 
   //Code Here
 
+  function outerFn() {
+  	return function() {
+  		return "Alessandro Improta"
+  	}
+  }
+
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
 
+var innerFn = outerFn();
 //Now invoke innerFn.
